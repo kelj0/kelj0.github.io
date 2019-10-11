@@ -1,5 +1,6 @@
 body {
-	background-color: #000000
+	background-color: #000000;
+	font-family: monospace;
 }
 
 #wrapper {
@@ -40,27 +41,24 @@ a {
 	color: white
 }
 
-li {
-	color: white;
-	padding-right: 5px
-}
-
 h1 {
 	text-align: center;
-	color: white
+	color: white;
 }
-
 h3 {
 	border-bottom: 1px solid black;
-	color: white
+	color: white;
 }
-
 p {
 	padding-left: 20px;
-	color: white
+	color: white;
+}
+li {
+	color: white;
+	padding-right: 5px;
 }
 
-@media(max-width:720px) {
+@media(max-width:840px) {
 	h1 {
 		font-size: 20px
 	}
@@ -71,8 +69,8 @@ p {
 		font-size: 13px
 	}
 	li {
-		font-size: 13px
-	}
+    font-size: 13px
+    }
 	#middleBox {
 		width: 80%
 	}
@@ -96,3 +94,8 @@ p {
 	}
 }
 
+@media(max-height:544px){
+    #scrollable{
+        height:70%;
+    }
+}
