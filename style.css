@@ -36,6 +36,7 @@ body {
 	height: 80%;
 	padding-left: 5px;
 }
+
 a {
 	color: white
 }
@@ -98,3 +99,26 @@ li {
         height:70%;
     }
 }
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  #scrollable {
+    overflow-y: unset;
+  }
+  #q{
+    display: none;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+}
+
