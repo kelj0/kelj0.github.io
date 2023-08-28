@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>end-of-life on Karlo Kegljevic</title>
+    <link>https://www.kelj0.com/tags/end-of-life/</link>
+    <description>Recent content in end-of-life on Karlo Kegljevic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 20 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelj0.com/tags/end-of-life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python 2.7 End-of-Life Announced</title>
+      <link>https://www.kelj0.com/posts/2_python2.7eol/</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/2_python2.7eol/</guid>
+      <description>The Python Software Foundation has announced that Python 2.7 will reach end-of-life on January 1, 2020. This means that Python 2.7 will no longer receive security updates or bug fixes after that date.
+The Python Software Foundation recommends that users migrate to Python 3.x as soon as possible. Python 3 is a newer version of Python that includes a number of improvements over Python 2.x.
+For more information, see the Python 2.</description>
+    </item>
+    
+  </channel>
+</rss>

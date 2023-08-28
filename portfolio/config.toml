@@ -1,0 +1,61 @@
+baseurl = "https://www.kelj0.com"
+title = "Karlo Kegljevic"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Karlo Kegljevic"
+  info = "Senior Python Developer"
+  description = "Karlo Kegljevic's personal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/avatar.png"
+  #gravatar = "john.doe@example.com"
+
+  faviconSVG = "/images/freebsd.jpeg"
+  favicon_32 = "/images/freebsd.jpeg"
+  favicon_16 = "/images/freebsd.jpeg"
+
+  since = 2016
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/kelj0/"
+[[params.social]]
+  name = "X"
+  icon = "fa fa-times fa-2x"
+  weight = 3
+  url = "https://x.com/0x0kelj0"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
+[[menu.main]]
+  name = "CV"
+  weight = 3
+  url = "cv/"

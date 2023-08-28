@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data science on Karlo Kegljevic</title>
+    <link>https://www.kelj0.com/tags/data-science/</link>
+    <description>Recent content in data science on Karlo Kegljevic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelj0.com/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python for Data Science Becomes Mainstream</title>
+      <link>https://www.kelj0.com/posts/3_python_becomes_datascience_mainstream/</link>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/3_python_becomes_datascience_mainstream/</guid>
+      <description>Python has become the go-to language for data science. This is due to the fact that Python has a number of libraries and frameworks that are well-suited for data science tasks, such as NumPy, SciPy, and Pandas.
+The popularity of Python for data science is also due to the fact that it is a relatively easy language to learn. This makes it a good choice for beginners who are interested in learning data science.</description>
+    </item>
+    
+  </channel>
+</rss>

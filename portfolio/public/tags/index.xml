@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Karlo Kegljevic</title>
+    <link>https://www.kelj0.com/tags/</link>
+    <description>Recent content in Tags on Karlo Kegljevic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelj0.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>news</title>
+      <link>https://www.kelj0.com/tags/news/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://www.kelj0.com/tags/python/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cicd</title>
+      <link>https://www.kelj0.com/tags/cicd/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/cicd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deployments</title>
+      <link>https://www.kelj0.com/tags/deployments/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/deployments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://www.kelj0.com/tags/devops/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://www.kelj0.com/tags/data-science/</link>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>end-of-life</title>
+      <link>https://www.kelj0.com/tags/end-of-life/</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/end-of-life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://www.kelj0.com/tags/github/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

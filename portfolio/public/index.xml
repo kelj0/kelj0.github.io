@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Karlo Kegljevic</title>
+    <link>https://www.kelj0.com/</link>
+    <description>Recent content on Karlo Kegljevic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelj0.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python 3.10 released!</title>
+      <link>https://www.kelj0.com/posts/8_python310/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/8_python310/</guid>
+      <description>Precise Types: A New Era of Type HintingLink to headingPython 3.10 ushers in a new era of type hinting with the introduction of the types module. This module brings a collection of precise types to the table, including types like Email, Url, and more. These specialized types empower developers to express intentions more accurately in their type hints, making code more understandable and enabling type checkers to catch potential errors more effectively.</description>
+    </item>
+    
+    <item>
+      <title>Python 3.9 released!</title>
+      <link>https://www.kelj0.com/posts/7_python39/</link>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/7_python39/</guid>
+      <description>Type Hinting: A New Level of PrecisionLink to headingPython 3.9 takes type hinting to the next level by introducing support for standardizing the types of dictionaries and lists within type hints. Developers can now express their intent clearly by specifying the types of values that dictionaries (dict[str, int]) and lists (list[int]) can hold. This enhancement promotes both code readability and correctness, allowing type checkers to catch potential errors more effectively.</description>
+    </item>
+    
+    <item>
+      <title>Python 3.8 released!</title>
+      <link>https://www.kelj0.com/posts/6_python38/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/6_python38/</guid>
+      <description>Assignment Expressions: The Walrus OperatorLink to headingThe arrival of the assignment expression, affectionately known as the &amp;ldquo;walrus operator&amp;rdquo; (:=), marks a paradigm shift in how we approach coding constructs. This operator allows us to perform assignments within other expressions, a seemingly small addition that unleashes a world of possibilities. The walrus operator finds its prime utility in loops and comprehensions, allowing developers to assign and utilize values within a single line of code.</description>
+    </item>
+    
+    <item>
+      <title>Blue-Green deployments</title>
+      <link>https://www.kelj0.com/posts/5_bluegreen/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/5_bluegreen/</guid>
+      <description>Navigating Software Deployments: The Power of Blue-Green DeploymentsLink to headingIn the ever-evolving landscape of software development, the ability to deploy updates swiftly and seamlessly is paramount. Enter the world of deployment strategies, where innovative approaches like Blue-Green Deployments are transforming the way applications are rolled out. In this blog post, we&amp;rsquo;ll delve into the concept of Blue-Green Deployments, understanding what they are, why they matter, and how they can benefit your development workflow.</description>
+    </item>
+    
+    <item>
+      <title>Python 3.7 Released!</title>
+      <link>https://www.kelj0.com/posts/4_python3.7released/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/4_python3.7released/</guid>
+      <description>Python 3.7 has been released! This release includes a number of new features and improvements, including:
+A new f-string syntax for string formatting A new walrus operator (:) for tuple unpacking A number of performance improvements For more information, see the Python 3.7 release notes.
+New f-string syntaxLink to headingThe f-string syntax is a new way to format strings in Python. It is similar to the old format() syntax, but it is more concise and easier to read.</description>
+    </item>
+    
+    <item>
+      <title>Python for Data Science Becomes Mainstream</title>
+      <link>https://www.kelj0.com/posts/3_python_becomes_datascience_mainstream/</link>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/3_python_becomes_datascience_mainstream/</guid>
+      <description>Python has become the go-to language for data science. This is due to the fact that Python has a number of libraries and frameworks that are well-suited for data science tasks, such as NumPy, SciPy, and Pandas.
+The popularity of Python for data science is also due to the fact that it is a relatively easy language to learn. This makes it a good choice for beginners who are interested in learning data science.</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7 End-of-Life Announced</title>
+      <link>https://www.kelj0.com/posts/2_python2.7eol/</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/2_python2.7eol/</guid>
+      <description>The Python Software Foundation has announced that Python 2.7 will reach end-of-life on January 1, 2020. This means that Python 2.7 will no longer receive security updates or bug fixes after that date.
+The Python Software Foundation recommends that users migrate to Python 3.x as soon as possible. Python 3 is a newer version of Python that includes a number of improvements over Python 2.x.
+For more information, see the Python 2.</description>
+    </item>
+    
+    <item>
+      <title>Python Becomes the Most Popular Language on GitHub</title>
+      <link>https://www.kelj0.com/posts/1_most_popular_on_github/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/1_most_popular_on_github/</guid>
+      <description>Python&amp;rsquo;s Dominance on GitHub: A JetBrains StudyLink to headingIn the rapidly evolving landscape of programming languages, Python has emerged as the undisputed champion on GitHub, according to a recent study conducted by JetBrains. The findings of this study reveal that Python holds a commanding position, accounting for an impressive 19.7% of all code hosted on GitHub. Notably, Python&amp;rsquo;s popularity surpasses other heavyweights like JavaScript (18.9%) and Java (16.</description>
+    </item>
+    
+    <item>
+      <title>Python 3.5 Released!</title>
+      <link>https://www.kelj0.com/posts/0_python3.5released/</link>
+      <pubDate>Tue, 20 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/0_python3.5released/</guid>
+      <description>Exploring the Exciting Features of Python 3.5Link to headingThe world of programming languages is constantly evolving, and Python, as one of the most popular languages, never fails to surprise us with its advancements. The recent release of Python 3.5 introduces a plethora of new features and improvements that are set to change the way we code and approach various challenges. In this article, we&amp;rsquo;ll dive into some of the standout features that make Python 3.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kelj0.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/about/</guid>
+      <description>Karlo Kegljevic is an accomplished software engineer with a passion for networking, programming, and security. With a diverse background in site reliability engineering, information security, and Python development, he thrives in creating efficient, secure, and scalable software solutions. Karlo&amp;rsquo;s expertise extends to designing complete software architectures using technologies such as Flask, Django, C++11, and various databases. He&amp;rsquo;s also adept at CI/CD pipeline creation, cloud management, and system hardening. Karlo&amp;rsquo;s collaborative leadership style fosters exceptional team performance, making him a valuable asset for any growth-focused endeavor.</description>
+    </item>
+    
+  </channel>
+</rss>

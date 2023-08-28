@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Python 3.10 released! · Karlo Kegljevic
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Karlo Kegljevic">
+<meta name="description" content="Precise Types: A New Era of Type HintingLink to headingPython 3.10 ushers in a new era of type hinting with the introduction of the types module. This module brings a collection of precise types to the table, including types like Email, Url, and more. These specialized types empower developers to express intentions more accurately in their type hints, making code more understandable and enabling type checkers to catch potential errors more effectively.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 3.10 released!"/>
+<meta name="twitter:description" content="Precise Types: A New Era of Type HintingLink to headingPython 3.10 ushers in a new era of type hinting with the introduction of the types module. This module brings a collection of precise types to the table, including types like Email, Url, and more. These specialized types empower developers to express intentions more accurately in their type hints, making code more understandable and enabling type checkers to catch potential errors more effectively."/>
+
+<meta property="og:title" content="Python 3.10 released!" />
+<meta property="og:description" content="Precise Types: A New Era of Type HintingLink to headingPython 3.10 ushers in a new era of type hinting with the introduction of the types module. This module brings a collection of precise types to the table, including types like Email, Url, and more. These specialized types empower developers to express intentions more accurately in their type hints, making code more understandable and enabling type checkers to catch potential errors more effectively." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kelj0.com/posts/8_python310/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-10-06T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://www.kelj0.com/posts/8_python310/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/freebsd.jpeg" sizes="any">
+<link rel="icon" type="image/png" href="/img/freebsd.jpeg" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/freebsd.jpeg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Karlo Kegljevic
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/cv/">CV</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://www.kelj0.com/posts/8_python310/">
+              Python 3.10 released!
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-10-06T00:00:00Z">
+                October 6, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/karlo-kegljevic/">Karlo Kegljevic</a></div>
+
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/python/">python</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/news/">news</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="precise-types-a-new-era-of-type-hinting">
+  Precise Types: A New Era of Type Hinting
+  <a class="heading-link" href="#precise-types-a-new-era-of-type-hinting">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Python 3.10 ushers in a new era of type hinting with the introduction of the types module. This module brings a collection of precise types to the table, including types like Email, Url, and more. These specialized types empower developers to express intentions more accurately in their type hints, making code more understandable and enabling type checkers to catch potential errors more effectively.</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff7b72">from</span> <span style="color:#ff7b72">types</span> <span style="color:#ff7b72">import</span> Email
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">def</span> <span style="color:#d2a8ff;font-weight:bold">send_email</span>(to: Email, subject: str, content: str) <span style="color:#ff7b72;font-weight:bold">-&gt;</span> <span style="color:#79c0ff">None</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8b949e;font-style:italic"># Your email-sending logic here</span>
+</span></span></code></pre></div><h2 id="pattern-matching-enhancements-that-matter">
+  Pattern Matching: Enhancements That Matter
+  <a class="heading-link" href="#pattern-matching-enhancements-that-matter">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Pattern matching, a hallmark feature introduced in Python 3.10, receives significant enhancements. The match statement now offers better error messages, making it easier to identify and troubleshoot issues. Moreover, the syntax itself becomes more expressive, allowing developers to craft intuitive conditional statements that elegantly handle a variety of scenarios.</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff7b72">def</span> <span style="color:#d2a8ff;font-weight:bold">get_discount</span>(product):
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">match</span> product:
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">case</span> <span style="color:#a5d6ff">&#34;apple&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#ff7b72">return</span> <span style="color:#a5d6ff">0.1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">case</span> <span style="color:#a5d6ff">&#34;banana&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#ff7b72">return</span> <span style="color:#a5d6ff">0.2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">case</span> _:
+</span></span><span style="display:flex;"><span>            <span style="color:#ff7b72">return</span> <span style="color:#a5d6ff">0</span>
+</span></span></code></pre></div><h2 id="performance-boost-speeding-up-your-code">
+  Performance Boost: Speeding Up Your Code
+  <a class="heading-link" href="#performance-boost-speeding-up-your-code">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Python 3.10 comes bearing the gift of improved performance. With various performance enhancements, this version speeds up the interpreter, resulting in overall quicker execution of your Python code. From the smallest scripts to the most complex applications, these optimizations contribute to a smoother and more responsive development experience.
+Embracing Python 3.10&rsquo;s Advancements</p>
+<hr>
+<p>Python 3.10 introduces features that redefine how we approach coding precision and performance. The types module enriches type hinting, enabling the use of specialized types that convey intentions accurately. Enhancements to pattern matching make conditional statements more intuitive, while performance improvements result in snappier code execution.</p>
+<p>As you explore Python 3.10, consider integrating its features into your coding arsenal. Embrace precise types to enhance type hinting clarity, leverage pattern matching for expressive conditional logic, and enjoy the benefits of improved performance across your projects.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2016 -
+    
+    2023
+     Karlo Kegljevic 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

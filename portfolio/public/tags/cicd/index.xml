@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cicd on Karlo Kegljevic</title>
+    <link>https://www.kelj0.com/tags/cicd/</link>
+    <description>Recent content in cicd on Karlo Kegljevic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 22 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelj0.com/tags/cicd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blue-Green deployments</title>
+      <link>https://www.kelj0.com/posts/5_bluegreen/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/5_bluegreen/</guid>
+      <description>Navigating Software Deployments: The Power of Blue-Green DeploymentsLink to headingIn the ever-evolving landscape of software development, the ability to deploy updates swiftly and seamlessly is paramount. Enter the world of deployment strategies, where innovative approaches like Blue-Green Deployments are transforming the way applications are rolled out. In this blog post, we&amp;rsquo;ll delve into the concept of Blue-Green Deployments, understanding what they are, why they matter, and how they can benefit your development workflow.</description>
+    </item>
+    
+  </channel>
+</rss>

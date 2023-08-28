@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Blue-Green deployments · Karlo Kegljevic
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Karlo Kegljevic">
+<meta name="description" content="Navigating Software Deployments: The Power of Blue-Green DeploymentsLink to headingIn the ever-evolving landscape of software development, the ability to deploy updates swiftly and seamlessly is paramount. Enter the world of deployment strategies, where innovative approaches like Blue-Green Deployments are transforming the way applications are rolled out. In this blog post, we&rsquo;ll delve into the concept of Blue-Green Deployments, understanding what they are, why they matter, and how they can benefit your development workflow.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blue-Green deployments"/>
+<meta name="twitter:description" content="Navigating Software Deployments: The Power of Blue-Green DeploymentsLink to headingIn the ever-evolving landscape of software development, the ability to deploy updates swiftly and seamlessly is paramount. Enter the world of deployment strategies, where innovative approaches like Blue-Green Deployments are transforming the way applications are rolled out. In this blog post, we&rsquo;ll delve into the concept of Blue-Green Deployments, understanding what they are, why they matter, and how they can benefit your development workflow."/>
+
+<meta property="og:title" content="Blue-Green deployments" />
+<meta property="og:description" content="Navigating Software Deployments: The Power of Blue-Green DeploymentsLink to headingIn the ever-evolving landscape of software development, the ability to deploy updates swiftly and seamlessly is paramount. Enter the world of deployment strategies, where innovative approaches like Blue-Green Deployments are transforming the way applications are rolled out. In this blog post, we&rsquo;ll delve into the concept of Blue-Green Deployments, understanding what they are, why they matter, and how they can benefit your development workflow." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kelj0.com/posts/5_bluegreen/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-08-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-08-22T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://www.kelj0.com/posts/5_bluegreen/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/freebsd.jpeg" sizes="any">
+<link rel="icon" type="image/png" href="/img/freebsd.jpeg" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/freebsd.jpeg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Karlo Kegljevic
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/cv/">CV</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://www.kelj0.com/posts/5_bluegreen/">
+              Blue-Green deployments
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2018-08-22T00:00:00Z">
+                August 22, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/karlo-kegljevic/">Karlo Kegljevic</a></div>
+
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/devops/">devops</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/cicd/">cicd</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/deployments/">deployments</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="navigating-software-deployments-the-power-of-blue-green-deployments">
+  Navigating Software Deployments: The Power of Blue-Green Deployments
+  <a class="heading-link" href="#navigating-software-deployments-the-power-of-blue-green-deployments">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>In the ever-evolving landscape of software development, the ability to deploy updates swiftly and seamlessly is paramount. Enter the world of deployment strategies, where innovative approaches like Blue-Green Deployments are transforming the way applications are rolled out. In this blog post, we&rsquo;ll delve into the concept of Blue-Green Deployments, understanding what they are, why they matter, and how they can benefit your development workflow.</p>
+<h2 id="understanding-blue-green-deployments">
+  Understanding Blue-Green Deployments
+  <a class="heading-link" href="#understanding-blue-green-deployments">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Blue-Green Deployments are a deployment strategy that aims to minimize downtime and reduce risks associated with software releases. The concept is simple: instead of directly updating the production environment, two identical environments—referred to as &ldquo;Blue&rdquo; and &ldquo;Green&rdquo;—are maintained. At any given time, one environment serves as the active production environment (for instance, &ldquo;Blue&rdquo;), while the other (in this case, &ldquo;Green&rdquo;) remains untouched.</p>
+<p>When an update is ready to be deployed, it&rsquo;s rolled out to the inactive environment. This new version can be thoroughly tested and validated without affecting the active production environment. Once the update in the inactive environment has been verified and deemed stable, the deployment strategy can be &ldquo;switched&rdquo; by directing incoming traffic to the updated environment. The previously active environment then becomes the backup.</p>
+<h2 id="benefits-of-blue-green-deployments">
+  Benefits of Blue-Green Deployments
+  <a class="heading-link" href="#benefits-of-blue-green-deployments">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li>
+<p><strong>Minimal Downtime</strong>: One of the primary advantages of Blue-Green Deployments is the reduction in downtime. Since the updated version is fully tested before being switched to the active environment, there is no need to take the application offline for extended periods during deployment.</p>
+</li>
+<li>
+<p><strong>Risk Mitigation</strong>: In traditional deployment methods, an issue with the new version could lead to extended downtime while rolling back to the previous version. With Blue-Green Deployments, the switch can be easily reversed by redirecting traffic back to the previous environment, effectively minimizing the impact of potential problems.</p>
+</li>
+<li>
+<p><strong>Continuous Availability</strong>: Blue-Green Deployments ensure that the application remains available throughout the deployment process. Users experience uninterrupted service, contributing to a positive user experience and customer satisfaction.</p>
+</li>
+<li>
+<p><strong>Effective Testing</strong>: The inactive environment provides a safe space for thorough testing of the new version. This allows developers to catch and fix potential bugs and issues before they reach the production environment.</p>
+</li>
+<li>
+<p><strong>Scalability Testing</strong>: Blue-Green Deployments also serve as an opportunity to test the application&rsquo;s scalability. By directing a portion of the traffic to the new version, developers can assess how well the application handles increased load.</p>
+</li>
+</ol>
+<h2 id="implementing-blue-green-deployments">
+  Implementing Blue-Green Deployments
+  <a class="heading-link" href="#implementing-blue-green-deployments">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Implementing Blue-Green Deployments requires careful planning and a robust deployment pipeline. Here are the key steps involved:</p>
+<ol>
+<li>
+<p><strong>Infrastructure Setup</strong>: Establish the two identical environments, Blue and Green, alongside the necessary infrastructure.</p>
+</li>
+<li>
+<p><strong>Automated Deployment</strong>: Utilize automation tools and scripts to streamline the deployment process. Automation ensures consistency and reduces the chance of human error.</p>
+</li>
+<li>
+<p><strong>Testing and Verification</strong>: Once the update is rolled out to the inactive environment, conduct thorough testing to validate the new version&rsquo;s stability and functionality.</p>
+</li>
+<li>
+<p><strong>Switch Traffic</strong>: Redirect incoming traffic to the updated environment (Green, in this case) to make it the active production environment.</p>
+</li>
+<li>
+<p><strong>Monitoring and Rollback</strong>: Monitor the application&rsquo;s performance and user experience in the active environment. If any issues arise, the deployment can be rolled back by switching the traffic back to the previous environment.</p>
+</li>
+</ol>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Blue-Green Deployments are revolutionizing the way software updates are released. By maintaining two identical environments and seamlessly switching between them, development teams can achieve minimal downtime, reduced risk, and enhanced user experience. As applications grow in complexity and user expectations continue to rise, deploying updates with confidence becomes a cornerstone of successful software development. Blue-Green Deployments offer a powerful solution, empowering developers to navigate the ever-changing world of deployment with agility and precision.</p>
+<p>Incorporating Blue-Green Deployments into your deployment strategy requires careful planning and implementation, but the benefits are well worth the effort. As you embark on your journey to optimize your deployment workflow, consider exploring the versatility and efficiency that Blue-Green Deployments bring to the table. Your users and your development team will thank you for it.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2016 -
+    
+    2023
+     Karlo Kegljevic 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

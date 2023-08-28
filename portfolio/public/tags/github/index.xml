@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on Karlo Kegljevic</title>
+    <link>https://www.kelj0.com/tags/github/</link>
+    <description>Recent content in github on Karlo Kegljevic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 03 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelj0.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Becomes the Most Popular Language on GitHub</title>
+      <link>https://www.kelj0.com/posts/1_most_popular_on_github/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/1_most_popular_on_github/</guid>
+      <description>Python&amp;rsquo;s Dominance on GitHub: A JetBrains StudyLink to headingIn the rapidly evolving landscape of programming languages, Python has emerged as the undisputed champion on GitHub, according to a recent study conducted by JetBrains. The findings of this study reveal that Python holds a commanding position, accounting for an impressive 19.7% of all code hosted on GitHub. Notably, Python&amp;rsquo;s popularity surpasses other heavyweights like JavaScript (18.9%) and Java (16.</description>
+    </item>
+    
+  </channel>
+</rss>
