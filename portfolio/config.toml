@@ -12,10 +12,9 @@ style = "github-dark"
 [params]
   author = "Karlo Kegljevic"
   info = "Senior Python Developer"
-  description = "Karlo Kegljevic's personal website"
+  description = "Karlo Kegljevic is a Python developer with over 7 years of experience."
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.png"
-  #gravatar = "john.doe@example.com"
 
   faviconSVG = "/images/freebsd.jpeg"
   favicon_32 = "/images/freebsd.jpeg"
