@@ -1,3 +1,4 @@
-mv /var/www/kelj0.com/kelj0.github.io/index.html /var/www/kelj0.com/public/
+mv /var/www/kelj0.com/kelj0.github.io/cv/index.html /var/www/kelj0.com/public/cv/
+cp -r /var/www/kelj0.com/kelj0.github.io/portfolio/public/ /var/www/kelj0.com/public/
 nginx -s reload
 echo "Moved new index to public and reloaded nginx"
