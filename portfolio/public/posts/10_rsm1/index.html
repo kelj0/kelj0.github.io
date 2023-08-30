@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  What is reliability, scalability and maintainability · Karlo Kegljevic
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Karlo Kegljevic">
+<meta name="description" content="this is a first post from a series of posts called Reliable, scalable and maintainable applications
+ReliabilityLink to headingEverybody has an idea what this is:
+application performs the function that the user expected it can tolerate the user making mistakes or using software in unexpected way its performance is good enough for the required use case, under the expected load and data volume the system prevents any unauthorized access and abuse The things that can go wrong are called faults , and systems that anticipate faults and can cope with them are called fault-tolerant or resilient.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What is reliability, scalability and maintainability"/>
+<meta name="twitter:description" content="this is a first post from a series of posts called Reliable, scalable and maintainable applications
+ReliabilityLink to headingEverybody has an idea what this is:
+application performs the function that the user expected it can tolerate the user making mistakes or using software in unexpected way its performance is good enough for the required use case, under the expected load and data volume the system prevents any unauthorized access and abuse The things that can go wrong are called faults , and systems that anticipate faults and can cope with them are called fault-tolerant or resilient."/>
+
+<meta property="og:title" content="What is reliability, scalability and maintainability" />
+<meta property="og:description" content="this is a first post from a series of posts called Reliable, scalable and maintainable applications
+ReliabilityLink to headingEverybody has an idea what this is:
+application performs the function that the user expected it can tolerate the user making mistakes or using software in unexpected way its performance is good enough for the required use case, under the expected load and data volume the system prevents any unauthorized access and abuse The things that can go wrong are called faults , and systems that anticipate faults and can cope with them are called fault-tolerant or resilient." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.kelj0.com/posts/10_rsm1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-29T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://www.kelj0.com/posts/10_rsm1/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/freebsd.jpeg" sizes="any">
+<link rel="icon" type="image/png" href="/images/freebsd.jpeg" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/freebsd.jpeg" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Karlo Kegljevic
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/cv/">CV</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://www.kelj0.com/posts/10_rsm1/">
+              What is reliability, scalability and maintainability
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-08-29T00:00:00Z">
+                August 29, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/karlo-kegljevic/">Karlo Kegljevic</a></div>
+
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/reliability/">reliability</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/scalability/">scalability</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/maintainability/">maintainability</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p>this is a first post from a series of posts called <a href="/posts/9_rsm0/" >Reliable, scalable and maintainable applications</a></p>
+</blockquote>
+<h3 id="reliability">
+  Reliability
+  <a class="heading-link" href="#reliability">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Everybody has an idea what this is:</p>
+<ul>
+<li>application performs the function that the user expected</li>
+<li>it can tolerate the user making mistakes or using software in unexpected way</li>
+<li>its performance is good enough for the required use case, under the expected load and data volume</li>
+<li>the system prevents any unauthorized access and abuse</li>
+</ul>
+<p>The things that can go wrong are called <em>faults</em> , and systems that anticipate faults and can cope with them are called <em>fault-tolerant</em> or <em>resilient</em>.
+If a <em>fault</em> makes a system unaccessible ie. system stops working and providing required service to the user it is then called <em>failure</em>.
+For a <em>fault-tolerant</em> systems it makes sense to test them all the time that they perform good, and that this <em>faults</em> dont cause <em>failures</em>. One of the ways
+to to this is to increase rate of faults by triggering them deliberately - for example randomly killing individual process without warning. An example of this approach
+would be <a href="https://netflix.github.io/chaosmonkey/"  class="external-link" target="_blank" rel="noopener"><em>Netflix Chaos Monkey</em></a></p>
+<p>There are situations in which we may choose to sacrifice reliability in order to reduce develompent cost or operational cost - but we should be very conscious of when we are cutting corners</p>
+<h3 id="scalability">
+  Scalability
+  <a class="heading-link" href="#scalability">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Even if a system is working reliably today, that doesn&rsquo;t mean it will necessarily work reliably in the future. One common reason for degradation is increased load:
+maybe the system has grown from 10,000 concurrent users to 100,000 concurrent users, or from 1 million to 10 million. Perhaps it is processing much larger volumes of
+data than it did before.</p>
+<p>Scalability is the term used to describe a system&rsquo;s ability to cope with increased load.
+Important note is that it is meaningless to say X is scalable or Y doesn&rsquo;t scale, scalability is defined through discussion of questions like
+<em>what options system has for coping with the grow if it grows in a particular way?</em>, <em>or how can we add computing resources to handle the additional load?</em></p>
+<h4 id="load">
+  Load
+  <a class="heading-link" href="#load">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>To be able to ask this questions, and then think about solutions we need to describe what is the <strong>current load</strong> on the system.</p>
+<p>Load can be described with a few numbers which we call <em>load parameters</em>. The best choice of parameters depends on the architecture of your system - for example:</p>
+<ul>
+<li><strong>Web server</strong> <em>requests per second</em></li>
+<li><strong>Database</strong> <em>ratio of reads to writes</em></li>
+<li><strong>Chat room</strong> <em>number of simutaneously active users</em></li>
+<li><strong>Cache</strong> <em>hit rate</em></li>
+<li>and more..</li>
+</ul>
+<h4 id="performance">
+  Performance
+  <a class="heading-link" href="#performance">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Once we described the load on our system, we cna investigate what happens when the load increases.</p>
+<ul>
+<li>When you increase a load parameter and keep the system resources (CPU, memory, network bandwidth, etc.) unchanged, how is the performance of your system affected?</li>
+<li>When you increase a load parameter, how much do you need to increase the resources if you want to keep performance unchanged?</li>
+</ul>
+<p>Both questions require performance numbers. For example</p>
+<ul>
+<li>in batch processing systems we usually care about <em>throughput</em>
+<ul>
+<li>number of records we can process per second, or the total time it takes to run a job on a dataset of a certain size</li>
+</ul>
+</li>
+<li>in online systems, what is usually more important is the service&rsquo;s <em>response time</em>
+<ul>
+<li>the time between a client sending a request and receiving a response</li>
+</ul>
+</li>
+</ul>
+<p>Even if you only make the same request over and over again, you&rsquo;ll get a slightly different response time on every try. We therefore need to think of response
+time not as a single number, but as a distribution of values that you can measure.</p>
+<p>It&rsquo;s common to see the average response time of a service reported. (Strictly speaking, the term &ldquo;average&rdquo; doesn’t refer to any particular formula,
+but in practice it is usually understood as the arithmetic mean: given n values, add up all the values, and divide by n.) However, the mean is not
+a very good metric if you want to know your &ldquo;typical&rdquo; response time, because it doesn&rsquo;t tell you how many users actually experienced that delay.</p>
+<p>Usually it is better to use percentiles. If you take your list of response times and sort it from fastest to slowest, then the median is the
+halfway point: for example, if your median response time is 200 ms, that means half your requests return in less than 200 ms, and half your requests
+take longer than that. The median is also known as the 50th percentile, and sometimes abbreviated as p50.</p>
+<p>In order to figure out how bad your outliers are, you can look at higher percentiles:
+the 95th, 99th, and 99.9th percentiles are common (abbreviated p95, p99, and p999). They are the response time thresholds at which 95%, 99%, or 99.9%
+of requests are faster than that particular threshold.</p>
+<h3 id="maintainability">
+  Maintainability
+  <a class="heading-link" href="#maintainability">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>It is well known that the majority of the cost of software is not in its initial development, but in its ongoing maintenance - fixing bugs,
+keeping its system operational, investigating failures, adapting it to new platforms&hellip;</p>
+<p>Yet, unfortunately, many people working on software systems dislike maintenance of so-called legacy systems.</p>
+<p>However, we can and should design software in such a way that it will hopefully minimize pain during maintenance, and thus avoid creating legacy software ourselves.
+To this end, we will pay particular attention to three design principles for software systems:</p>
+<ul>
+<li><strong>Operability</strong>
+<ul>
+<li>Make it easy for operations teams to keep the system running smoothly</li>
+</ul>
+</li>
+<li><strong>Simplicity</strong>
+<ul>
+<li>Make it easy for new engineers to understand the system, by removing as much complexity as possible from the system.</li>
+</ul>
+</li>
+<li><strong>Evolvability</strong>
+<ul>
+<li>Make it easy for engineers to make changes to the system in the future, adapting it for unanticipated use cases as requirements change</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2016 -
+    
+    2023
+     Karlo Kegljevic 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
