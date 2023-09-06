@@ -6,104 +6,16 @@
     <description>Recent content on Karlo Kegljevic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelj0.com/authors/karlo-kegljevic/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Batch Processing</title>
-      <link>https://www.kelj0.com/posts/19_batch/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kelj0.com/posts/19_batch/</guid>
-      <description>TODOLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Consistency and Consensus</title>
-      <link>https://www.kelj0.com/posts/18_consistencyconsensus/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kelj0.com/posts/18_consistencyconsensus/</guid>
-      <description>TODOLink to heading</description>
-    </item>
-    
+    <lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelj0.com/authors/karlo-kegljevic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Models and Query Languages</title>
       <link>https://www.kelj0.com/posts/11_dataandquery/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.kelj0.com/posts/11_dataandquery/</guid>
-      <description>TODOLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Encoding and Evolution</title>
-      <link>https://www.kelj0.com/posts/13_encodingevolution/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kelj0.com/posts/13_encodingevolution/</guid>
-      <description>TODOLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Partitioning</title>
-      <link>https://www.kelj0.com/posts/15_partitioning/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kelj0.com/posts/15_partitioning/</guid>
-      <description>TODOLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Replication</title>
-      <link>https://www.kelj0.com/posts/14_replication/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kelj0.com/posts/14_replication/</guid>
-      <description>TODOLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Storage and Retrival</title>
-      <link>https://www.kelj0.com/posts/12_storageretrival/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kelj0.com/posts/12_storageretrival/</guid>
-      <description>TODOLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Stream Processing</title>
-      <link>https://www.kelj0.com/posts/20_stream/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kelj0.com/posts/20_stream/</guid>
-      <description>TODOLink to heading</description>
-    </item>
-    
-    <item>
-      <title>The Future of Data Systems</title>
-      <link>https://www.kelj0.com/posts/21_future/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kelj0.com/posts/21_future/</guid>
-      <description>TODOLink to heading</description>
-    </item>
-    
-    <item>
-      <title>The Trouble with Distributed Systems</title>
-      <link>https://www.kelj0.com/posts/17_trouble/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kelj0.com/posts/17_trouble/</guid>
-      <description>TODOLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Transactions</title>
-      <link>https://www.kelj0.com/posts/16_transactions/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kelj0.com/posts/16_transactions/</guid>
-      <description>TODOLink to heading</description>
+      <description>The limits of my language mean the limits of my world
+Data models are perhaps the most important part of developing software, because they have such a profound effect: not only on how the software is written, but also on how we think about the problem that we are solving.
+SQL (Structured Query Language) Databases: SQL databases are relational databases that use a structured schema to define the data model.</description>
     </item>
     
     <item>

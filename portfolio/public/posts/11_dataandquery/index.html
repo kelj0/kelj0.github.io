@@ -13,19 +13,25 @@
 
 
 <meta name="author" content="Karlo Kegljevic">
-<meta name="description" content="TODOLink to heading">
+<meta name="description" content="The limits of my language mean the limits of my world
+Data models are perhaps the most important part of developing software, because they have such a profound effect: not only on how the software is written, but also on how we think about the problem that we are solving.
+SQL (Structured Query Language) Databases: SQL databases are relational databases that use a structured schema to define the data model.">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Data Models and Query Languages"/>
-<meta name="twitter:description" content="TODOLink to heading"/>
+<meta name="twitter:description" content="The limits of my language mean the limits of my world
+Data models are perhaps the most important part of developing software, because they have such a profound effect: not only on how the software is written, but also on how we think about the problem that we are solving.
+SQL (Structured Query Language) Databases: SQL databases are relational databases that use a structured schema to define the data model."/>
 
 <meta property="og:title" content="Data Models and Query Languages" />
-<meta property="og:description" content="TODOLink to heading" />
+<meta property="og:description" content="The limits of my language mean the limits of my world
+Data models are perhaps the most important part of developing software, because they have such a profound effect: not only on how the software is written, but also on how we think about the problem that we are solving.
+SQL (Structured Query Language) Databases: SQL databases are relational databases that use a structured schema to define the data model." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.kelj0.com/posts/11_dataandquery/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-08-30T00:00:00+00:00" />
+<meta property="article:published_time" content="2023-09-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-09-06T00:00:00+00:00" />
 
 
 
@@ -142,13 +148,13 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2023-08-30T00:00:00Z">
-                August 30, 2023
+              <time datetime="2023-09-06T00:00:00Z">
+                September 6, 2023
               </time>
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              One-minute read
+              2-minute read
             </span>
           </div>
           <div class="authors">
@@ -167,13 +173,45 @@
 
       <div class="post-content">
         
-        <h1 id="todo">
-  TODO
-  <a class="heading-link" href="#todo">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
+        <blockquote>
+<p><em>The limits of my language mean the limits of my world</em></p>
+</blockquote>
+<p>Data models are perhaps the most important part of developing software, because
+they have such a profound effect: not only on how the software is written, but also on
+how we think about the problem that we are solving.</p>
+<ul>
+<li>SQL (Structured Query Language) Databases:
+<ul>
+<li>SQL databases are relational databases that use a structured schema to define the data model.</li>
+<li>Data is organized into tables with rows and columns, and relationships between tables are established through foreign keys.</li>
+<li>SQL databases are suitable for structured data with well-defined relationships.</li>
+</ul>
+</li>
+<li>NoSQL (Not Only SQL) Databases:
+<ul>
+<li>NoSQL databases are designed to handle unstructured or semi-structured data, as well as scenarios where the data model is not predefined.</li>
+<li>They offer more flexibility in terms of schema design, allowing you to work with data that can evolve over time.</li>
+<li>NoSQL databases are categorized into several types, including document-oriented, key-value, column-family, and graph databases.</li>
+</ul>
+</li>
+<li>Graph Databases:
+<ul>
+<li>Graph databases are a specialized type of NoSQL database designed to handle data with complex relationships.</li>
+<li>Data is represented as nodes, edges, and properties, making them ideal for modeling and querying connected data.</li>
+<li>Graph databases excel in scenarios where the relationships between data points are as important as the data itself, such as social networks, recommendation engines, and fraud detection.</li>
+<li>They are optimized for traversing and querying graph structures efficiently.</li>
+</ul>
+</li>
+</ul>
+<p>All three models (document, relational, and graph) are widely used today, and each is
+good in its respective domain. One model can be emulated in terms of another
+model - for example, graph data can be represented in a relational database
+but the result is often awkward. That’s why we have different systems for different
+purposes, not a single one-size-fits-all solution</p>
+<p>Today, there are even newer ways to query data, for example GenBank which is a sequence
+database specialized to perform sequence similarity searches, which means taking one
+very long string (representing a DNA molecule) and matching it against a large database
+of strings that are similar, but not identical.</p>
 
       </div>
 
