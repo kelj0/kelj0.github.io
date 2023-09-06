@@ -8,11 +8,38 @@
     <language>en</language>
     <lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelj0.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>todo</title>
-      <link>https://www.kelj0.com/tags/todo/</link>
+      <title>data</title>
+      <link>https://www.kelj0.com/tags/data/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelj0.com/tags/todo/</guid>
+      <guid>https://www.kelj0.com/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://www.kelj0.com/tags/database/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>models</title>
+      <link>https://www.kelj0.com/tags/models/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>query</title>
+      <link>https://www.kelj0.com/tags/query/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/tags/query/</guid>
       <description></description>
     </item>
     

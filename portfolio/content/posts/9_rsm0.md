@@ -13,10 +13,10 @@ to a specific software system.
 In the following blog posts we are going to define them and show how they relate to the data of the software system.
 
 - [What is reliability, scalability and maintainability](/posts/10_rsm1/)
+- [Data Models and Query Languages](/posts/11_dataandquery/)
 
 TODO:
 
-- [Data Models and Query Languages](/posts/11_dataandquery/)
 - [Storage and Retrival](/posts/12_storageretrival/)
 - [Encoding and Evolution](/posts/13_encodingevolution/)
 - [Replication](/posts/14_replication/)

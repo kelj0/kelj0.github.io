@@ -2,7 +2,7 @@
 authors = ["Karlo Kegljevic"]
 title = "Data Models and Query Languages"
 date = "2023-09-06"
-tags = ["todo"]
+tags = ["data", "models", "database", "query"]
 +++
 
 
