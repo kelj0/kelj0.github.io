@@ -13,19 +13,22 @@
 
 
 <meta name="author" content="Karlo Kegljevic">
-<meta name="description" content="TODOLink to heading">
+<meta name="description" content="DatabaseLink to headingOn the most fundamental level, a database needs to do two things: when you give it some data, it should store the data, and when you ask it again later, it should give the data back to you. There is a big difference between storage engines that are optimized for transactional workloads and those that are optimized for analytics.
+In order to efficiently find the value for a particular key in the database, we need a different data structure: an index.">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Storage and Retrival"/>
-<meta name="twitter:description" content="TODOLink to heading"/>
+<meta name="twitter:description" content="DatabaseLink to headingOn the most fundamental level, a database needs to do two things: when you give it some data, it should store the data, and when you ask it again later, it should give the data back to you. There is a big difference between storage engines that are optimized for transactional workloads and those that are optimized for analytics.
+In order to efficiently find the value for a particular key in the database, we need a different data structure: an index."/>
 
 <meta property="og:title" content="Storage and Retrival" />
-<meta property="og:description" content="TODOLink to heading" />
+<meta property="og:description" content="DatabaseLink to headingOn the most fundamental level, a database needs to do two things: when you give it some data, it should store the data, and when you ask it again later, it should give the data back to you. There is a big difference between storage engines that are optimized for transactional workloads and those that are optimized for analytics.
+In order to efficiently find the value for a particular key in the database, we need a different data structure: an index." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.kelj0.com/posts/12_storageretrival/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-08-30T00:00:00+00:00" />
+<meta property="article:published_time" content="2023-09-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-09-07T00:00:00+00:00" />
 
 
 
@@ -142,8 +145,8 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2023-08-30T00:00:00Z">
-                August 30, 2023
+              <time datetime="2023-09-07T00:00:00Z">
+                September 7, 2023
               </time>
             </span>
             <span class="reading-time">
@@ -159,7 +162,15 @@
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="/tags/todo/">todo</a>
+      <a href="/tags/storage/">storage</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/performance/">performance</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/indexing/">indexing</a>
     </span></div>
 
         </div>
@@ -167,13 +178,28 @@
 
       <div class="post-content">
         
-        <h1 id="todo">
-  TODO
-  <a class="heading-link" href="#todo">
+        <h3 id="database">
+  Database
+  <a class="heading-link" href="#database">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
-</h1>
+</h3>
+<p>On the most fundamental level, a database needs to do two things: when you give it
+some data, it should store the data, and when you ask it again later, it should give the
+data back to you.
+There is a big difference between storage engines that are optimized for transactional workloads
+and those that are optimized for analytics.</p>
+<p>In order to efficiently find the value for a particular key in the database, we need a different
+data structure: an index. An index is an additional structure that is derived from the primary data.
+Many databases allow you to add and remove indexes, and this doesn’t affect the contents of the database;
+it only affects the performance of queries.
+Any kind of index usually slows down writes, because the index also needs to be updated every time
+data is written.</p>
+<p>This is an important trade-off in storage systems: <strong>well-chosen indexes speed up read queries</strong>,
+<strong>but</strong> every index <strong>slows down writes</strong>. For this reason, databases don’t usually
+index everything by default, but require you—the application developer or database
+administrator—to choose indexes manually, using your knowledge of the application&rsquo;s typical query patterns.</p>
 
       </div>
 

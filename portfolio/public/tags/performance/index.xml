@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>performance on Karlo Kegljevic</title>
+    <link>https://www.kelj0.com/tags/performance/</link>
+    <description>Recent content in performance on Karlo Kegljevic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelj0.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Storage and Retrival</title>
+      <link>https://www.kelj0.com/posts/12_storageretrival/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kelj0.com/posts/12_storageretrival/</guid>
+      <description>DatabaseLink to headingOn the most fundamental level, a database needs to do two things: when you give it some data, it should store the data, and when you ask it again later, it should give the data back to you. There is a big difference between storage engines that are optimized for transactional workloads and those that are optimized for analytics.
+In order to efficiently find the value for a particular key in the database, we need a different data structure: an index.</description>
+    </item>
+    
+  </channel>
+</rss>

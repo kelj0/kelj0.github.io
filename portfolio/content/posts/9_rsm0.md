@@ -14,10 +14,10 @@ In the following blog posts we are going to define them and show how they relate
 
 - [What is reliability, scalability and maintainability](/posts/10_rsm1/)
 - [Data Models and Query Languages](/posts/11_dataandquery/)
+- [Storage and Retrival](/posts/12_storageretrival/)
 
 TODO:
 
-- [Storage and Retrival](/posts/12_storageretrival/)
 - [Encoding and Evolution](/posts/13_encodingevolution/)
 - [Replication](/posts/14_replication/)
 - [Partitioning](/posts/15_partitioning/)
